@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment_03</title>
+    <style>
+        #main {
+            display: flex;
+            margin-left: 300px;
+        }
+        #main2 {
+            margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        #space{
+            margin-top: 40px;
+            margin-left: 80px;
+        }
+        .form-group label {
+            width: 150px;
+            text-align: right;
+            margin-right: 10px;
+        }
+       
+        button {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <center>
+            <strong style="font-size: 30px;">Registration Form</strong>
+        </center>
+        <br><br>
+        <div id="main">
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TmLIzFwLwc8?si=vw_OB48GYHV-K9tu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  
+            </div>
+            <div id="main2">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="birthdate">BirthDate:</label>
+                    <input type="date" id="birthdate">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" placeholder="Enter password here">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <select id="address">
+                        <option>State</option>
+                        <option>Goa</option>
+                        <option>Maharashtra</option>
+                        <option>Delhi</option>
+                        <option>Gujarat</option>
+                    </select>
+                    <select>
+                        <option>District</option>
+                        <option>Pune</option>
+                        <option>Kolhapur</option>
+                        <option>Mumbai</option>
+                        <option>Chennai</option>
+                    </select>
+                    <select>
+                        <option>City</option>
+                        <option>Kagal</option>
+                        <option>Gadhinglaj</option>
+                        <option>Ichalkaranji</option>
+                        <option>Nipani</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </div>
+                <div class="form-group">
+                    <label for="photo">Upload photo:</label>
+                    <input type="file" id="photo">
+                </div>
+                <div class="form-group">
+                    <label for="course">Select your course:</label>
+                    <select id="course">
+                        <option>Select course</option>
+                        <option>PG-DAC</option>
+                        <option>PG-DBDA</option>
+                        <option>PG-DAI</option>
+                        <option>PG-DESD</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button id="space">Register</button>
+                    <button id="space">Clear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
